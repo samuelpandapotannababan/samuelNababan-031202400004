@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Declare and initialize two 4x4 matrices
+    int matrix1[4][4], matrix2[4][4], sum[4][4];
+
+    // Input elements for Matrix 1
+    cout << "Enter elements for Matrix 1 (4x4):" << endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << "Enter element [" << i << "][" << j << "]: ";
+            cin >> matrix1[i][j];
+        }
+    }
+
+    // Input elements for Matrix 2
+    cout << "Enter elements for Matrix 2 (4x4):" << endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << "Enter element [" << i << "][" << j << "]: ";
+            cin >> matrix2[i][j];
+        }
+    }
+
+    // Adding the matrices
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            sum[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+
+    // Display Matrix 1
+    cout << "\nMatrix 1:" << endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << matrix1[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Display Matrix 2
+    cout << "\nMatrix 2:" << endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << matrix2[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Display the sum of the matrices
+    cout << "\nSum of Matrix 1 and Matrix 2:" << endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << sum[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
